@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_8"
+    android:layout_marginBottom="@dimen/dp_8">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/color_weather_day"
+        app:layout_constraintBottom_toBottomOf="@id/image_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/image_avatar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_celsius_predict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/all_fourth_time"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="@id/image_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/image_avatar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_celsius_actual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/all_fourth_time"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@id/image_avatar"
+        app:layout_constraintEnd_toStartOf="@id/text_celsius_predict"
+        app:layout_constraintTop_toTopOf="@id/image_avatar" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_avatar"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginEnd="@dimen/dp_8"
+        android:src="@drawable/ic_sun"
+        app:layout_constraintEnd_toStartOf="@id/text_celsius_actual"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

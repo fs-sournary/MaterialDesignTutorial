@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/fragment_menu">
+
+    <fragment
+        android:id="@+id/fragment_menu"
+        android:name="com.sournary.materialdesigntutorial.ui.menu.MenuFragment"
+        android:label="Fragment menu"
+        tools:layout="@layout/fragment_menu">
+
+        <action
+            android:id="@+id/action_menu_to_bottom_appbar"
+            app:destination="@+id/fragment_bottom_appbar" />
+
+        <action
+            android:id="@+id/action_menu_to_card"
+            app:destination="@+id/fragment_card" />
+
+        <action
+            android:id="@+id/action_menu_to_chip"
+            app:destination="@+id/fragment_chip" />
+
+        <action
+            android:id="@+id/action_menu_to_transformation"
+            app:destination="@+id/fragment_transformation" />
+
+        <action
+            android:id="@+id/action_menu_to_bottom_nav"
+            app:destination="@+id/fragment_bottom_nav" />
+
+        <action
+            android:id="@+id/action_menu_to_button"
+            app:destination="@+id/fragment_button" />
+
+        <action
+            android:id="@+id/action_menu_to_tab"
+            app:destination="@+id/fragment_tab" />
+
+        <action
+            android:id="@+id/action_menu_to_fab"
+            app:destination="@+id/fragment_fab" />
+
+        <action
+            android:id="@+id/action_menu_to_top_appbar"
+            app:destination="@+id/fragment_top_appbar" />
+
+        <action
+            android:id="@+id/action_menu_to_font"
+            app:destination="@+id/fragment_font" />
+
+        <action
+            android:id="@+id/action_menu_to_text_field"
+            app:destination="@+id/fragment_text_field" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_card"
+        android:name="com.sournary.materialdesigntutorial.ui.card.CardFragment"
+        android:label="Fragment card"
+        tools:layout="@layout/fragment_card" />
+
+    <fragment
+        android:id="@+id/fragment_bottom_appbar"
+        android:name="com.sournary.materialdesigntutorial.ui.bottomappbar.BottomAppBarFragment"
+        android:label="bottom app bar"
+        tools:layout="@layout/fragment_bottom_appbar">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_chip"
+        android:name="com.sournary.materialdesigntutorial.ui.chip.ChipFragment"
+        android:label="Fragment chip"
+        tools:layout="@layout/fragment_chip" />
+
+    <fragment
+        android:id="@+id/fragment_transformation"
+        android:name="com.sournary.materialdesigntutorial.ui.transformation.TransformationFragment"
+        android:label="Fragment transformation"
+        tools:layout="@layout/fragment_transformation" />
+
+    <fragment
+        android:id="@+id/fragment_bottom_nav"
+        android:name="com.sournary.materialdesigntutorial.ui.bottomnav.BottomNavFragment"
+        android:label="Fragment Bottom navigation"
+        tools:layout="@layout/fragment_bottom_nav" />
+
+    <fragment
+        android:id="@+id/fragment_button"
+        android:name="com.sournary.materialdesigntutorial.ui.button.ButtonFragment"
+        android:label="Fragment button"
+        tools:layout="@layout/fragment_button" />
+
+    <fragment
+        android:id="@+id/fragment_tab"
+        android:name="com.sournary.materialdesigntutorial.ui.tab.TabFragment"
+        android:label="Fragment tab"
+        tools:layout="@layout/fragment_tab" />
+
+    <fragment
+        android:id="@+id/fragment_fab"
+        android:name="com.sournary.materialdesigntutorial.ui.fab.FabFragment"
+        android:label="Fragment fab"
+        tools:layout="@layout/fragment_fab" />
+
+    <fragment
+        android:id="@+id/fragment_top_appbar"
+        android:name="com.sournary.materialdesigntutorial.ui.topappbar.TopAppbarFragment"
+        android:label="Fragment top appbar"
+        tools:layout="@layout/fragment_top_appbar" />
+
+    <fragment
+        android:id="@+id/fragment_font"
+        android:name="com.sournary.materialdesigntutorial.ui.font.FontFragment"
+        android:label="Fragment font"
+        tools:layout="@layout/fragment_font" />
+
+    <fragment
+        android:id="@+id/fragment_text_field"
+        android:name="com.sournary.materialdesigntutorial.ui.textfield.TextFieldFragment"
+        android:label="Fragment text field"
+        tools:layout="@layout/fragment_text_field" />
+</navigation>

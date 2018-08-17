@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">MaterialDesignTutorial</string>
+    <string name="main_title">Material tutorial</string>
+    <string name="full_component_card_view_detail_action">View detail</string>
+    <string name="search_title">Search</string>
+    <string name="bottom_appbar_three_direction">3d</string>
+    <string name="bottom_appbar_fill">Fill</string>
+    <string name="bottom_appbar_title">Bottom app bar</string>
+    <string name="bottom_appbar_replace">Replace</string>
+    <string name="bottom_appbar_center">Center</string>
+    <string name="bottom_appbar_end">End</string>
+    <string name="bottom_appbar_show_fab">Show fab</string>
+    <string name="bottom_appbar_hide_fab">Hide fab</string>
+    <string name="all_main_character">Main character</string>
+    <string name="all_demo_supporting_text">
+        Demo of full components card which uses Material design google
+    </string>
+    <string name="all_card">Card</string>
+    <string name="card_full_component_header">Full component card</string>
+    <string name="not_full_length_divider_cafe_header">Cafe book</string>
+    <string name="not_full_length_divider_rate">3.5 (413)</string>
+    <string name="not_full_length_divider_location">$ - Italian, Cafe</string>
+    <string name="not_full_length_divider_supporting_text">Chip choice: In as name to here them deny wise this. As rapid woody my he me which. Men but they fail shew just wish next put. Led all visitor musical calling nor her. Within coming figure sex things are. Pretended concluded did repulsive education smallness yet yet described. Had country man his pressed shewing. No gate dare rose he. Eyes year if miss he as upon.</string>
+    <string name="not_full_length_divider_tonight_availability">Tonight\'s availability</string>
+    <string name="all_first_time">5:30 PM</string>
+    <string name="all_secondary_time">7:30 PM</string>
+    <string name="not_full_length_divider_reverse_action">Reverse</string>
+    <string name="all_first_location">Hong Kong</string>
+    <string name="all_weather_info">Mon, 12:30 PM, Mostly Sunny</string>
+    <string name="all_celsius">23</string>
+    <string name="not_full_length_divider_celsius_symbol">&#927;</string>
+    <string name="not_full_length_divider_temperate_symbol">C</string>
+    <string name="not_full_length_divider_snowing_number">2% Precipitation</string>
+    <string name="not_full_length_divider_wind_number">23 km/h Winds</string>
+    <string name="all_expand">Expand</string>
+    <string name="all_third_time">8 AM</string>
+    <string name="all_fourth_time">11 AM</string>
+    <string name="all_fifth_time">2 PM</string>
+    <string name="all_sixth_time">5 PM</string>
+    <string name="all_seventh_time">8 PM</string>
+    <string name="chip_title">Chip</string>
+    <string name="chip_entry">Chip entry</string>
+    <string name="chip_filter">Chip filter</string>
+    <string name="chip_action">Chip action</string>
+    <string name="chip_single_check">Single check</string>
+    <string name="chip_horizontal_chip_group">Horizontal chip group</string>
+    <string name="transformation_title">Transformation</string>
+    <string name="transformation_child_title">Image, video and media</string>
+    <string name="bottom_nav_title">Bottom navigation</string>
+    <string name="bottom_nav_card_header">Full bottom navigation styles</string>
+    <string name="bottom_nav_add_action">Add item</string>
+    <string name="bottom_nav_remove_action">Remove item</string>
+    <string name="bottom_nav_navigation_style">Navigation style</string>
+    <string name="bottom_nav_auto">Auto</string>
+    <string name="bottom_nav_selected">Selected</string>
+    <string name="bottom_nav_labeled">Labeled</string>
+    <string name="bottom_nav_unlabeled">Unlabeled</string>
+    <string name="bottom_nav_first_page">Page 1</string>
+    <string name="bottom_nav_second_page">Page 2</string>
+    <string name="bottom_nav_third_page">Page 3</string>
+    <string name="bottom_nav_fourth_page">Page 4</string>
+    <string name="bottom_nav_fifth_page">Page 5</string>
+    <string name="button_title">Button</string>
+    <string name="button_unelevated">Unelevated button</string>
+    <string name="button_enable">Enable</string>
+    <string name="all_disable">Disable</string>
+    <string name="all_icon">Icon button</string>
+    <string name="button_text_button">Text button</string>
+    <string name="button_outlined_button">Outline button</string>
+    <string name="tab_icon_label_inline">Show icon, label and inline ?</string>
+    <string name="all_show_icon">Show icon</string>
+    <string name="tab_show_label">Show label</string>
+    <string name="tab_inline">Inline</string>
+    <string name="tab_gravity">Gravity</string>
+    <string name="tab_indicator">Indicator</string>
+    <string name="tab_bottom_line">Bottom line</string>
+    <string name="tab_top_line">Top line</string>
+    <string name="tab_center_line">Center line</string>
+    <string name="tab_pill">Pill</string>
+    <string name="tab_oval">Oval</string>
+    <string name="tab_box">Box</string>
+    <string name="tab_round_line">Round line</string>
+    <string name="tab_first_tab">Tab 1</string>
+    <string name="tab_second_tab">Tab 2</string>
+    <string name="tab_third_tab">Tab 3</string>
+    <string name="tab_label_tab">Tab %d</string>
+    <string name="show_fab">Show fab</string>
+    <string name="paragraph_random_text">
+    \t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a, ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.
+    \n\n\t\tSuspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae, molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor bibendum, vel congue leo egestas.
+    \n\n\t\tSed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel, molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula, in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque est.
+    \n\n\t\tAenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh. Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc, quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus convallis.
+    \n\n\t\tPhasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper, libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="hint_text_field_input_text">Input text</string>
+
+    <string-array name="cat_chip_group_text_array">
+        <item>New York</item>
+        <item>Los Angeles</item>
+        <item>Chicago+</item>
+        <item>Houston</item>
+        <item>Philadelphia</item>
+        <item>Phoenix</item>
+        <item>San Antonio</item>
+        <item>San Diego</item>
+        <item>Dallas</item>
+        <item>San Jose</item>
+        <item>Austin</item>
+        <item>Jacksonville</item>
+        <item>San Francisco</item>
+    </string-array>
+</resources>

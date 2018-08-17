@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/card_font_margin_start"
+    android:layout_marginTop="@dimen/card_font_margin_top"
+    android:layout_marginEnd="@dimen/card_font_margin_end"
+    android:layout_marginBottom="@dimen/card_font_margin_bottom"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:cardElevation="@dimen/card_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_font_thumbnail"
+            android:layout_width="@dimen/image_thumbnail_card_size"
+            android:layout_height="@dimen/image_thumbnail_card_size"
+            android:layout_marginStart="@dimen/image_thumbnail_card_margin_start"
+            android:layout_marginTop="@dimen/image_media_card_margin_top"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_logo_components_48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_header_margin_start"
+            android:includeFontPadding="false"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/image_font_thumbnail"
+            app:layout_constraintTop_toTopOf="@id/image_font_thumbnail" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_subhead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_subhead_font_margin_top"
+            android:includeFontPadding="true"
+            android:text="@string/app_name"
+            android:textSize="@dimen/sp_12"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/image_font_thumbnail"
+            app:layout_constraintStart_toStartOf="@id/text_header" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_demo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/text_demo_font_margin_top"
+            android:background="@drawable/bg_font_text_demo"
+            android:gravity="center"
+            android:text="@string/app_name"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_subhead" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_supporting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_supporting_card_margin_start"
+            android:layout_marginTop="@dimen/text_supporting_card_margin_top"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:layout_marginBottom="@dimen/text_supporting_card_margin_bottom"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/all_demo_supporting_text"
+            android:textSize="@dimen/sp_12"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_demo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
