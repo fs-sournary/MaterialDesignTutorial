@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.sournary.materialdesigntutorial.R
-import com.sournary.materialdesigntutorial.data.Weather
+import com.sournary.materialdesigntutorial.model.Weather
 import java.util.concurrent.Executors
 
 /**

@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
 import com.sournary.materialdesigntutorial.R
-import com.sournary.materialdesigntutorial.data.Item
+import com.sournary.materialdesigntutorial.model.Item
 import java.util.concurrent.Executors
 
 /**
@@ -58,6 +58,7 @@ class MenuAdapter(
                     7 -> Navigation.findNavController(v).navigate(R.id.action_menu_to_tab)
                     9 -> Navigation.findNavController(v).navigate(R.id.action_menu_to_top_appbar)
                     10 -> Navigation.findNavController(v).navigate(R.id.action_menu_to_transformation)
+                    11 -> Navigation.findNavController(v).navigate(R.id.action_menu_to_list)
                 }
             }
         }

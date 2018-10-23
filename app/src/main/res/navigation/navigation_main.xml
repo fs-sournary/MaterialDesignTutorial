@@ -54,6 +54,10 @@
         <action
             android:id="@+id/action_menu_to_text_field"
             app:destination="@+id/fragment_text_field" />
+
+        <action
+            android:id="@+id/action_menu_to_list"
+            app:destination="@id/list" />
     </fragment>
 
     <fragment
@@ -123,4 +127,21 @@
         android:name="com.sournary.materialdesigntutorial.ui.textfield.TextFieldFragment"
         android:label="Fragment text field"
         tools:layout="@layout/fragment_text_field" />
+
+    <fragment
+        android:id="@+id/list"
+        android:name="com.sournary.materialdesigntutorial.ui.list.ProductFragment"
+        android:label="List"
+        tools:layout="@layout/fragment_list">
+
+        <action
+            android:id="@+id/action_list_to_detail"
+            app:destination="@id/product_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/product_detail"
+        android:name="com.sournary.materialdesigntutorial.ui.list.ProductDetailFragment"
+        android:label="Product detail"
+        tools:layout="@layout/fragment_product_detail" />
 </navigation>

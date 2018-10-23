@@ -69,4 +69,5 @@
     <dimen name="edit_filled_box_text_field_margin_start">16dp</dimen>
     <dimen name="edit_filled_box_text_field_margin_end">16dp</dimen>
     <dimen name="edit_text_filed_box_radius">8dp</dimen>
+    <dimen name="dp_72">72dp</dimen>
 </resources>

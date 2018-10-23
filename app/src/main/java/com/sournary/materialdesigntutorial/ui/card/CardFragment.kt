@@ -10,7 +10,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
 import com.sournary.materialdesigntutorial.R
-import com.sournary.materialdesigntutorial.data.Weather
+import com.sournary.materialdesigntutorial.model.Weather
 import com.sournary.materialdesigntutorial.ui.BaseFragment
 import com.sournary.materialdesigntutorial.util.setSupportActionBar
 
@@ -67,19 +67,44 @@ class CardFragment : BaseFragment() {
     private fun getWeatherList(): List<Weather> {
         val weatherList = mutableListOf<Weather>()
 
-        val tuesday = Weather("Tuesday", R.drawable.ic_sun, "/12", "24")
+        val tuesday = Weather(
+            "Tuesday",
+            R.drawable.ic_sun,
+            "/12",
+            "24"
+        )
         weatherList.add(tuesday)
 
-        val wednesday = Weather("Wednesday", R.drawable.ic_snowing, "/14", "22")
+        val wednesday = Weather(
+            "Wednesday",
+            R.drawable.ic_snowing,
+            "/14",
+            "22"
+        )
         weatherList.add(wednesday)
 
-        val thursday = Weather("Thursday", R.drawable.ic_sun, "/18", "25")
+        val thursday = Weather(
+            "Thursday",
+            R.drawable.ic_sun,
+            "/18",
+            "25"
+        )
         weatherList.add(thursday)
 
-        val friday = Weather("Friday", R.drawable.ic_sun, "/16", "20")
+        val friday = Weather(
+            "Friday",
+            R.drawable.ic_sun,
+            "/16",
+            "20"
+        )
         weatherList.add(friday)
 
-        val saturday = Weather("Saturday", R.drawable.ic_sunny_snowing, "/10", "16")
+        val saturday = Weather(
+            "Saturday",
+            R.drawable.ic_sunny_snowing,
+            "/10",
+            "16"
+        )
         weatherList.add(saturday)
 
         return weatherList

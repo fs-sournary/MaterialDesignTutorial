@@ -1,6 +1,7 @@
 package com.sournary.materialdesigntutorial
 
 import androidx.lifecycle.ViewModel
+import com.sournary.materialdesigntutorial.util.SingleLiveEvent
 
 /**
  * Created by fs-sournary.

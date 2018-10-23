@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.sournary.materialdesigntutorial.R
-import com.sournary.materialdesigntutorial.data.Item
+import com.sournary.materialdesigntutorial.model.Item
 import com.sournary.materialdesigntutorial.ui.BaseFragment
 
 /**
@@ -121,6 +121,14 @@ class MenuFragment : BaseFragment() {
             supportText = "This is demo about Transformation"
         )
 
+        val list = Item(
+            header = "List",
+            subhead = "Material component",
+            thumbnail = R.drawable.ic_logo_components_48dp,
+            media = R.drawable.ic_transformation,
+            supportText = "This is demo about List"
+        )
+
         return mutableListOf(
             bottomAppBar,
             bottomNavigation,
@@ -132,7 +140,8 @@ class MenuFragment : BaseFragment() {
             tab,
             textField,
             topAppBar,
-            transformation
+            transformation,
+            list
         )
     }
 

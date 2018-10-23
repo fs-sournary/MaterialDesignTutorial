@@ -11,4 +11,10 @@
     <style name="TextChildTransformationTheme" parent="TextAppearance.AppCompat">
         <item name="android:textStyle">bold</item>
     </style>
+
+    <style name="TvTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    </style>
 </resources>

@@ -1,4 +1,4 @@
-package com.sournary.materialdesigntutorial.data
+package com.sournary.materialdesigntutorial.model
 
 /**
  * Created: 17/08/2018

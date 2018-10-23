@@ -1,7 +1,7 @@
 package com.sournary.materialdesigntutorial.ui.menu
 
 import android.view.View
-import com.sournary.materialdesigntutorial.data.Item
+import com.sournary.materialdesigntutorial.model.Item
 
 /**
  * Created: 17/08/2018

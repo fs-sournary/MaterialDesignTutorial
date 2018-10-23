@@ -12,7 +12,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.RecyclerView
 import com.sournary.materialdesigntutorial.R
-import com.sournary.materialdesigntutorial.data.Font
+import com.sournary.materialdesigntutorial.model.Font
 import com.sournary.materialdesigntutorial.ui.BaseFragment
 import com.sournary.materialdesigntutorial.util.setSupportActionBar
 

@@ -1,4 +1,4 @@
-package com.sournary.materialdesigntutorial
+package com.sournary.materialdesigntutorial.util
 
 import androidx.annotation.MainThread
 import androidx.lifecycle.LifecycleOwner
