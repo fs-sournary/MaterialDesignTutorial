@@ -4,55 +4,34 @@ import android.annotation.SuppressLint
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.StyleRes
-import androidx.appcompat.widget.Toolbar
-import androidx.navigation.fragment.NavHostFragment
-import androidx.recyclerview.widget.RecyclerView
+import androidx.fragment.app.Fragment
 import com.sournary.materialdesigntutorial.R
 import com.sournary.materialdesigntutorial.model.Font
-import com.sournary.materialdesigntutorial.ui.BaseFragment
-import com.sournary.materialdesigntutorial.util.setSupportActionBar
+import kotlinx.android.synthetic.main.fragment_font.*
 
 /**
  * Created: 24/08/2018
  * By: Sang
  * Description:
  */
-const val DEMO_FONT_DEFAULT = "Required Api 21"
-const val STYLE_FONT_DEFAULT = android.R.style.TextAppearance_DeviceDefault
-
-class FontFragment : BaseFragment() {
-
-    private lateinit var rootView: View
+class FontFragment : Fragment() {
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        rootView = inflater.inflate(R.layout.fragment_font, container, false)
-        return rootView
-    }
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View?  = inflater.inflate(R.layout.fragment_font, container, false)
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        setupToolbar()
         setupFontList()
     }
 
-    private fun setupToolbar() {
-        val toolbar = rootView.findViewById<Toolbar>(R.id.toolbar)
-        setSupportActionBar(toolbar) { title = "Font" }
-    }
-
     private fun setupFontList() {
-        val fontRecyclerView = rootView.findViewById<RecyclerView>(R.id.recycler_font)
         activity?.let {
             val fontAdapter = FontAdapter(it)
-            fontRecyclerView.adapter = fontAdapter
+            recycler_font.adapter = fontAdapter
             fontAdapter.submitList(makeFontList())
         }
     }
@@ -60,7 +39,6 @@ class FontFragment : BaseFragment() {
     @SuppressLint("InlinedApi")
     private fun makeFontList(): List<Font> {
         val fonts = mutableListOf<Font>()
-
         val headLineFont = Font(
             name = "Head line",
             describe = "Head line Font by Material component",
@@ -68,7 +46,6 @@ class FontFragment : BaseFragment() {
             style = getFontStyle(android.R.style.TextAppearance_Material_Headline)
         )
         fonts.add(headLineFont)
-
         val subHead = Font(
             name = "SubHead",
             describe = "Subtitle Font by Material component",
@@ -76,7 +53,6 @@ class FontFragment : BaseFragment() {
             style = getFontStyle(android.R.style.TextAppearance_Material_Subhead)
         )
         fonts.add(subHead)
-
         val body1 = Font(
             name = "Body 1",
             describe = "Subtitle Font by Material component",
@@ -84,7 +60,6 @@ class FontFragment : BaseFragment() {
             style = getFontStyle(android.R.style.TextAppearance_Material_Body1)
         )
         fonts.add(body1)
-
         val body2 = Font(
             name = "Body 2",
             describe = "Subtitle Font by Material component",
@@ -92,7 +67,6 @@ class FontFragment : BaseFragment() {
             style = getFontStyle(android.R.style.TextAppearance_Material_Body2)
         )
         fonts.add(body2)
-
         val buttonText = Font(
             name = "Button Text",
             describe = "Subtitle Font by Material component",
@@ -100,7 +74,6 @@ class FontFragment : BaseFragment() {
             style = getFontStyle(android.R.style.TextAppearance_Material_Button)
         )
         fonts.add(buttonText)
-
         return fonts
     }
 
@@ -118,14 +91,9 @@ class FontFragment : BaseFragment() {
             STYLE_FONT_DEFAULT
         }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            android.R.id.home -> NavHostFragment.findNavController(this).popBackStack()
-        }
-        return true
-    }
+    companion object{
 
-    override fun onBackPress() {
-        NavHostFragment.findNavController(this).popBackStack()
+        const val DEMO_FONT_DEFAULT = "Required Api 21"
+        const val STYLE_FONT_DEFAULT = android.R.style.TextAppearance_DeviceDefault
     }
 }

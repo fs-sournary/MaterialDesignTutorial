@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MaterialTutorial.NavFadeThrough" parent="Theme.MaterialTutorial.NavFadeThrough.Base">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

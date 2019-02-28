@@ -2,47 +2,35 @@ package com.sournary.materialdesigntutorial.ui.textfield
 
 import android.os.Bundle
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.widget.Toolbar
-import androidx.navigation.fragment.NavHostFragment
+import androidx.fragment.app.Fragment
 import com.sournary.materialdesigntutorial.R
-import com.sournary.materialdesigntutorial.ui.BaseFragment
-import com.sournary.materialdesigntutorial.util.setSupportActionBar
+import kotlinx.android.synthetic.main.fragment_text_field.*
 
 /**
  * Created: 27/08/2018
  * By: Sang
- * Description:
+ * Description: With TextField, we only should use helper or error text, not both.
  */
-class TextFieldFragment : BaseFragment() {
+class TextFieldFragment : Fragment() {
 
-    private lateinit var rootView: View
-
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        rootView = inflater.inflate(R.layout.fragment_text_field, container, false)
-        return rootView
-    }
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View = inflater.inflate(R.layout.fragment_text_field, container, false)
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        setupToolbar()
-    }
-
-    private fun setupToolbar() {
-        val toolbar = rootView.findViewById<Toolbar>(R.id.toolbar)
-        setSupportActionBar(toolbar) { title = "Text Field" }
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            android.R.id.home -> NavHostFragment.findNavController(this).popBackStack()
+        filed_edit_text.setOnKeyListener { _, _, _ ->
+            val inputText = filed_edit_text.text.toString()
+            if (isValidInput(inputText)) {
+                filed_box_input_layout.error = null
+            } else {
+                filed_box_input_layout.error = "You have to fill with least 2 characters"
+            }
+            false
         }
-        return true
     }
 
-    override fun onBackPress() {
-        NavHostFragment.findNavController(this).popBackStack()
-    }
+    private fun isValidInput(text: String?): Boolean = text != null && text.length > 2
 }

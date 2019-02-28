@@ -13,7 +13,7 @@
         android:layout_height="@dimen/dp_40"
         android:layout_marginStart="@dimen/dp_16"
         android:scaleType="centerCrop"
-        android:src="@drawable/img_cafebook_background"
+        android:src="@drawable/img_cafe_book"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

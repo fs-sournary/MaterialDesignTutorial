@@ -6,8 +6,5 @@ package com.sournary.materialdesigntutorial.model
  * Description:
  */
 data class Weather(
-    val day: String,
-    val avatar: Int,
-    var predictCelsius: String,
-    val actualCelsius: String
+    val day: String, val avatar: Int, var predictCelsius: String, val actualCelsius: String
 )

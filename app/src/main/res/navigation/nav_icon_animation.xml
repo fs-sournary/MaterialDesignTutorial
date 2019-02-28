@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_icon_animation"
+    app:startDestination="@id/icon_animation_dest">
+
+    <fragment
+        android:id="@+id/icon_animation_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.iconanimationmenu.IconAnimationMenuFragment"
+        android:label="@string/main_icon_animation_item_title"
+        tools:layout="@layout/fragment_icon_animation">
+
+        <action
+            android:id="@+id/navigate_to_tick_cross"
+            app:destination="@id/tick_cross_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_trimming_stroked_path"
+            app:destination="@id/trimming_stroked_path_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_path_morphing"
+            app:destination="@id/path_morphing_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_group_of_path"
+            app:destination="@id/group_of_path_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tick_cross_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.tickcross.TickCrossFragment"
+        android:label="@string/tick_cross_title"
+        tools:layout="@layout/fragment_tick_cross" />
+
+    <fragment
+        android:id="@+id/trimming_stroked_path_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.trimmingstrokedpath.TrimmingStrokedPathFragment"
+        android:label="@string/trimming_stroked_path_title"
+        tools:layout="@layout/fragment_trimming_stroked_path" />
+
+    <fragment
+        android:id="@+id/path_morphing_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.pathmorphing.PathMorphingFragment"
+        android:label="@string/path_morphing_title"
+        tools:layout="@layout/fragment_path_morphing" />
+
+    <fragment
+        android:id="@+id/group_of_path_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.groupofpath.GroupOfPathFragment"
+        android:label="@string/group_of_path_title"
+        tools:layout="@layout/fragment_group_of_path" />
+</navigation>

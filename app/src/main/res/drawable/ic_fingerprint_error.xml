@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="@string/fingerprint_vt_name"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+
+<!--    <group-->
+<!--        android:name="@string/fingerprint_group_name"-->
+<!--        android:rotation="200.66753"-->
+<!--        android:translateX="16.125"-->
+<!--        android:translateY="19.75">-->
+
+<!--        <group-->
+<!--            android:name="@string/fingerprint_group_name"-->
+<!--            android:translateX="33.2085"-->
+<!--            android:translateY="30.91685">-->
+
+<!--            <group android:name="@string/fingerprint_ridge_5_group_name">-->
+<!--                <path-->
+<!--                    android:name="@string/fingerprint_ridge_5_path_name"-->
+<!--                    android:pathData="@string/fingerprint_error_ridge_5_path_date"-->
+<!--                    android:strokeWidth="1.45"-->
+<!--                    android:strokeAlpha="0.5"-->
+<!--                    android:strokeColor="?attr/colorControlNormal"-->
+<!--                    android:strokeLineCap="round"-->
+<!--                    android:trimPathEnd="0" />-->
+<!--            </group>-->
+
+<!--            <group android:name="@string/fingerprint_ridge_4_group_name">-->
+<!--                <path-->
+<!--                    android:name="@string/fingerprint_ridge_4_path_name"-->
+<!--                    android:pathData="@string/fingerprint_error_ridge_4_path_data"-->
+<!--                    android:strokeWidth="1.45"-->
+<!--                    android:strokeAlpha="0.5"-->
+<!--                    android:strokeColor="?attr/colorControlNormal"-->
+<!--                    android:strokeLineCap="round"-->
+<!--                    android:trimPathStart="1" />-->
+<!--            </group>-->
+
+<!--            <group android:name="@string/fingerprint_ridge_3_group_name">-->
+<!--                <path-->
+<!--                    android:name="@string/fingerprint_ridge_3_path_name"-->
+<!--                    android:pathData="@string/fingerprint_error_ridge_3_path_data"-->
+<!--                    android:strokeWidth="1.45"-->
+<!--                    android:strokeAlpha="0.5"-->
+<!--                    android:strokeColor="?attr/colorControlNormal"-->
+<!--                    android:strokeLineCap="round"-->
+<!--                    android:trimPathStart="1" />-->
+<!--            </group>-->
+
+<!--            <group android:name="@string/fingerprint_ridge_2_group_name">-->
+<!--                <path-->
+<!--                    android:name="@string/fingerprint_ridge_2_path_name"-->
+<!--                    android:pathData="@string/fingerprint_error_ridge_2_path_data"-->
+<!--                    android:strokeWidth="1.45"-->
+<!--                    android:strokeAlpha="0.5"-->
+<!--                    android:strokeColor="?attr/colorControlNormal"-->
+<!--                    android:strokeLineCap="round"-->
+<!--                    android:trimPathStart="1" />-->
+<!--            </group>-->
+
+<!--            <group-->
+<!--                android:name="@string/fingerprint_ridge_1_group_name"-->
+<!--                android:translateX="-97.5"-->
+<!--                android:translateY="-142.5">-->
+<!--                <path-->
+<!--                    android:name="@string/fingerprint_ridge_1_path_name"-->
+<!--                    android:pathData="@string/fingerprint_error_ridge_1_path_data"-->
+<!--                    android:strokeWidth="1.45"-->
+<!--                    android:strokeAlpha="0.5"-->
+<!--                    android:strokeColor="?attr/colorControlNormal"-->
+<!--                    android:strokeLineCap="round"-->
+<!--                    android:trimPathEnd="0" />-->
+<!--            </group>-->
+<!--        </group>-->
+<!--    </group>-->
+
+    <group
+        android:name="@string/fingerprint_exclamation_group_name"
+        android:translateX="16"
+        android:translateY="16">
+        <group android:name="@string/fingerprint_exclamation_group_2_name">
+            <path
+                android:name="@string/fingerprint_exclamation_path_2_name"
+                android:fillColor="#FFF2501D"
+                android:pathData="@string/fingerprint_error_exclamation_path_2_data" />
+
+            <path
+                android:name="@string/fingerprint_exclamation_path_1_name"
+                android:fillColor="#FFF2501D"
+                android:pathData="@string/fingerprint_error_exclamation_path_1_data" />
+        </group>
+    </group>
+
+    <group
+        android:name="@string/fingerprint_circle_outline_group_name"
+        android:translateX="16"
+        android:translateY="16">
+        <group
+            android:name="@string/fingerprint_circle_outline_group_1_name"
+            android:rotation="430"
+            android:scaleX="1.12734"
+            android:scaleY="1.12734">
+            <path
+                android:name="@string/fingerprint_circle_outline_path_name"
+                android:pathData="@string/fingerprint_error_circle_outline_path_data"
+                android:strokeWidth="2"
+                android:strokeColor="#FFF2501D"
+                android:trimPathStart="0"
+                android:trimPathEnd="1" />
+        </group>
+    </group>
+</vector>

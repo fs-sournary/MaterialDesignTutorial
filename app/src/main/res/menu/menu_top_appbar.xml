@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/top_appbar_type_action"
+        android:icon="@drawable/ic_replace"
+        android:title="@string/top_appbar_type_item_title"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/choose_theme_action"
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:title="@string/top_appbar_choose_theme_item_title"
+        app:showAsAction="ifRoom" />
+</menu>

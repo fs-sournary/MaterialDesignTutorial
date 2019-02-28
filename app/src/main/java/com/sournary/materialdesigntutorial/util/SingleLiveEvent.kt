@@ -7,9 +7,7 @@ import androidx.lifecycle.Observer
 import java.util.concurrent.atomic.AtomicBoolean
 
 /**
- * Created by fs-sournary.
- * Date: 8/18/18.
- * Description:
+ * Created in 8/18/2018 by Sang.
  */
 class SingleLiveEvent<T> : MutableLiveData<T>() {
 
@@ -17,9 +15,7 @@ class SingleLiveEvent<T> : MutableLiveData<T>() {
 
     override fun observe(owner: LifecycleOwner, observer: Observer<in T>) {
         super.observe(owner, Observer {
-            if (pending.compareAndSet(true, false)) {
-                observer.onChanged(it)
-            }
+            if (pending.compareAndSet(true, false)) observer.onChanged(it)
         })
     }
 

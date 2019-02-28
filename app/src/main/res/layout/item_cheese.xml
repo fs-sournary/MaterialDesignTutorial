@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp_16"
+    android:layout_marginEnd="@dimen/dp_16">
+
+    <LinearLayout
+        android:id="@+id/card_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_16">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/supportingVisualImage"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginStart="@dimen/dp_16"
+            tools:src="@drawable/cheese_1" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp_16"
+            android:textAppearance="@style/TextAppearance.MaterialTutorial.Title"
+            tools:text="@string/list_reorder_title" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

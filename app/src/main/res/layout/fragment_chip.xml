@@ -1,140 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        style="@style/Widget.MaterialComponents.Toolbar"
-        android:layout_width="0dp"
-        android:layout_height="?android:attr/actionBarSize"
-        android:background="@color/colorPrimary"
-        android:elevation="@dimen/dp_8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navigationIcon="@drawable/ic_close_vd_theme_24dp"
-        app:title="@string/chip_title"
-        app:titleTextColor="@android:color/white"
-        tools:ignore="UnusedAttribute" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_16">
 
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <com.google.android.material.chip.Chip
+            android:id="@+id/entry_type_chip"
+            style="@style/Widget.MaterialComponents.Chip.Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:ellipsize="end"
+            android:text="@string/chip_entry"
+            app:chipIcon="@drawable/ic_placeholder_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginStart="@dimen/dp_16" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/dp_16"
-            android:layout_marginEnd="@dimen/dp_16">
+        <com.google.android.material.chip.Chip
+            android:id="@+id/filter_type_chip"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:ellipsize="end"
+            android:text="@string/chip_filter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/entry_type_chip" />
 
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip_entry"
-                style="@style/Widget.MaterialComponents.Chip.Entry"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_16"
-                android:ellipsize="end"
-                android:text="@string/chip_entry"
-                app:chipIcon="@drawable/ic_placeholder_circle"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_goneMarginStart="@dimen/dp_16" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/choice_type_chip"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:ellipsize="end"
+            android:text="@string/not_full_length_divider_supporting_text"
+            app:chipBackgroundColor="@android:color/white"
+            app:chipEndPadding="@dimen/dp_8"
+            app:chipStartPadding="@dimen/dp_8"
+            app:chipStrokeColor="@android:color/darker_gray"
+            app:chipStrokeWidth="@dimen/dp_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/filter_type_chip" />
 
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip_filter"
-                style="@style/Widget.MaterialComponents.Chip.Filter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_16"
-                android:ellipsize="end"
-                android:text="@string/chip_filter"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/chip_entry" />
+        <com.google.android.material.chip.Chip
+            android:id="@+id/action_type_chip"
+            style="@style/Widget.MaterialComponents.Chip.Action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="@string/chip_action"
+            app:chipEndPadding="@dimen/dp_8"
+            app:chipIcon="@drawable/ic_placeholder_circle"
+            app:chipStartPadding="@dimen/dp_8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/choice_type_chip" />
 
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip_choice"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_16"
-                android:layout_marginEnd="@dimen/dp_16"
-                android:ellipsize="end"
-                android:text="@string/not_full_length_divider_supporting_text"
-                app:chipBackgroundColor="@android:color/white"
-                app:chipEndPadding="@dimen/dp_8"
-                app:chipStartPadding="@dimen/dp_8"
-                app:chipStrokeColor="@android:color/darker_gray"
-                app:chipStrokeWidth="@dimen/dp_1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/chip_filter" />
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/check_switch"
+            style="@style/Widget.AppCompat.CompoundButton.Switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="@string/chip_single_check"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/action_type_chip"
+            app:switchPadding="@dimen/dp_8" />
 
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip_action"
-                style="@style/Widget.MaterialComponents.Chip.Action"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_16"
-                android:text="@string/chip_action"
-                app:chipEndPadding="@dimen/dp_8"
-                app:chipIcon="@drawable/ic_placeholder_circle"
-                app:chipStartPadding="@dimen/dp_8"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/chip_choice" />
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/choice_chip_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/check_switch" />
 
-            <androidx.appcompat.widget.SwitchCompat
-                android:id="@+id/switch_check"
-                style="@style/Widget.AppCompat.CompoundButton.Switch"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_16"
-                android:text="@string/chip_single_check"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/chip_action"
-                app:switchPadding="@dimen/dp_8" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_horizontal_chip_group"
+            style="@style/TextAppearance.MaterialTutorial.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="@string/chip_horizontal_chip_group"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/choice_chip_group" />
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_horizontal_chip_group">
 
             <com.google.android.material.chip.ChipGroup
-                android:id="@+id/chip_group_choice"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_16"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/switch_check" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:id="@+id/text_horizontal_chip_group"
+                android:id="@+id/horizontal_choice_chip_group"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_16"
-                android:text="@string/chip_horizontal_chip_group"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/chip_group_choice" />
-
-            <HorizontalScrollView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_16"
-                android:scrollbars="none"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/text_horizontal_chip_group">
-
-                <com.google.android.material.chip.ChipGroup
-                    android:id="@+id/chip_horizontal_group_choice"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:singleLine="true" />
-            </HorizontalScrollView>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.core.widget.NestedScrollView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+                app:singleLine="true" />
+        </HorizontalScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

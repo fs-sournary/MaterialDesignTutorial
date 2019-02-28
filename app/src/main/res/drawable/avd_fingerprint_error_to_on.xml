@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:drawable="@drawable/ic_fingerprint_error_to_on">
+
+    <target android:name="@string/fingerprint_exclamation_group_2_name">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="233"
+                android:propertyName="rotation"
+                android:valueFrom="0"
+                android:valueTo="-289">
+                <aapt:attr name="android:interpolator">
+                    <pathInterpolator android:pathData="M 0,0 c 0.4,0 0.83333333333,1 1,1" />
+                </aapt:attr>
+            </objectAnimator>
+        </aapt:attr>
+    </target>
+
+    <target android:name="@string/fingerprint_exclamation_path_2_name">
+        <aapt:attr name="android:animation">
+            <set android:ordering="sequentially">
+                <objectAnimator
+                    android:duration="100"
+                    android:interpolator="@android:interpolator/linear"
+                    android:propertyName="pathData"
+                    android:valueFrom="@string/fingerprint_error_to_on_path_exclamation_path_2_data"
+                    android:valueTo="@string/fingerprint_error_to_on_path_exclamation_path_2_data"
+                    android:valueType="pathType" />
+
+                <objectAnimator
+                    android:duration="89"
+                    android:interpolator="@android:interpolator/linear"
+                    android:propertyName="pathData"
+                    android:valueFrom="@string/fingerprint_error_to_on_path_exclamation_path_2_data"
+                    android:valueTo="M 1.35900878906,6.76104736328 c 0,0 -2.69998168945,0 -2.69998168945,0 c 0,0 0.0340270996094,0.050048828125 0.0340270996094,0.050048828125 c 0,0 2.69998168945,0 2.69998168945,0 c 0,0 -0.0340270996094,-0.050048828125 -0.0340270996094,-0.050048828125 Z"
+                    android:valueType="pathType" />
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="@string/fingerprint_exclamation_path_1_name">
+        <aapt:attr name="android:animation">
+            <set android:ordering="sequentially">
+                <objectAnimator
+                    android:duration="16"
+                    android:interpolator="@android:interpolator/linear"
+                    android:propertyName="pathData"
+                    android:valueFrom="@string/fingerprint_error_to_on_path_exclamation_path_1_data"
+                    android:valueTo="@string/fingerprint_error_to_on_path_exclamation_path_1_data"
+                    android:valueType="pathType" />
+
+                <objectAnimator
+                    android:duration="83"
+                    android:interpolator="@android:interpolator/linear"
+                    android:propertyName="pathData"
+                    android:valueFrom="@string/fingerprint_error_to_on_path_exclamation_path_1_data"
+                    android:valueTo="M 1.35363769531,1.36633300781 c 0,0 -2.69998168945,0 -2.69998168945,0 c 0,0 -0.0213623046875,0.0250244140625 -0.0213623046875,0.0250244140625 c 0,0 2.69998168945,0 2.69998168945,0 c 0,0 0.0213623046875,-0.0250244140625 0.0213623046875,-0.0250244140625 Z"
+                    android:valueType="pathType" />
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="@string/fingerprint_circle_outline_group_1_name">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="416"
+                android:interpolator="@android:interpolator/fast_out_linear_in"
+                android:propertyName="rotation"
+                android:valueFrom="430"
+                android:valueTo="206"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+
+    <target android:name="@string/fingerprint_circle_outline_path_name">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="383"
+                android:interpolator="@android:interpolator/fast_out_linear_in"
+                android:propertyName="trimPathEnd"
+                android:valueFrom="1.0"
+                android:valueTo="0.0"
+                android:valueType="floatType" />
+        </aapt:attr>
+    </target>
+
+    <target android:name="@string/fingerprint_ridge_group_name">
+        <aapt:attr name="android:animation">
+            <set android:ordering="sequentially">
+                <objectAnimator
+                    android:duration="183"
+                    android:interpolator="@android:interpolator/linear"
+                    android:propertyName="rotation"
+                    android:valueFrom="200.66753"
+                    android:valueTo="200.66753"
+                    android:valueType="floatType" />
+
+                <objectAnimator
+                    android:duration="266"
+                    android:interpolator="@android:interpolator/linear"
+                    android:propertyName="rotation"
+                    android:valueFrom="200.66753"
+                    android:valueTo="0.0">
+                    <aapt:attr name="android:interpolator">
+                        <pathInterpolator android:pathData="M 0,0 c 0,0 0.612659627466,1 1,1" />
+                    </aapt:attr>
+                </objectAnimator>
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="@string/fingerprint_ridge_5_path_name">
+        <aapt:attr name="android:animation">
+            <set android:ordering="sequentially">
+                <objectAnimator
+                    android:duration="216"
+                    android:interpolator="@android:interpolator/linear"
+                    android:propertyName="trimPathEnd"
+                    android:valueFrom="0.0"
+                    android:valueTo="0.0" />
+
+                <objectAnimator
+                    android:duration="316"
+                    android:propertyName="trimPathEnd"
+                    android:valueFrom="0.0"
+                    android:valueTo="1.0">
+                    <aapt:attr name="android:interpolator">
+                        <pathInterpolator android:pathData="M 0,0 c 0,0 0.29,1 1,1" />
+                    </aapt:attr>
+                </objectAnimator>
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="@string/fingerprint_ridge_4_path_name">
+        <aapt:attr name="android:animation">
+            <set android:ordering="sequentially">
+                <objectAnimator
+                    android:duration="233"
+                    android:interpolator="@android:interpolator/linear"
+                    android:propertyName="trimPathStart"
+                    android:valueFrom="1"
+                    android:valueTo="1" />
+
+                <objectAnimator
+                    android:duration="200"
+                    android:propertyName="trimPathStart"
+                    android:valueFrom="1"
+                    android:valueTo="0">
+                    <aapt:attr name="android:animation">
+                        <pathInterpolator android:pathData="M 0,0 c 0,0 0.5,1 1,1" />
+                    </aapt:attr>
+                </objectAnimator>
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="@string/fingerprint_ridge_3_path_name">
+        <aapt:attr name="android:animation">
+            <set android:ordering="sequentially">
+                <objectAnimator
+                    android:duration="183"
+                    android:interpolator="@android:interpolator/linear"
+                    android:propertyName="trimPathStart"
+                    android:valueFrom="1"
+                    android:valueTo="1" />
+
+                <objectAnimator
+                    android:duration="350"
+                    android:interpolator="@android:interpolator/linear"
+                    android:propertyName="trimPathStart"
+                    android:valueFrom="1"
+                    android:valueTo="0" />
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="@string/fingerprint_ridge_2_path_name">
+        <aapt:attr name="android:animation">
+            <set android:ordering="sequentially">
+                <objectAnimator
+                    android:duration="333"
+                    android:interpolator="@android:interpolator/linear"
+                    android:propertyName="trimPathStart"
+                    android:valueFrom="1"
+                    android:valueTo="1" />
+
+                <objectAnimator
+                    android:duration="200"
+                    android:interpolator="@android:interpolator/linear"
+                    android:propertyName="trimPathStart"
+                    android:valueFrom="1"
+                    android:valueTo="0" />
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="@string/fingerprint_ridge_1_path_name">
+        <aapt:attr name="android:animation">
+            <set android:ordering="sequentially">
+                <objectAnimator
+                    android:duration="400"
+                    android:interpolator="@android:interpolator/linear"
+                    android:propertyName="trimPathEnd"
+                    android:valueFrom="0"
+                    android:valueTo="0" />
+
+                <objectAnimator
+                    android:duration="199"
+                    android:interpolator="@android:interpolator/linear"
+                    android:propertyName="trimPathEnd"
+                    android:valueFrom="0"
+                    android:valueTo="1" />
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>

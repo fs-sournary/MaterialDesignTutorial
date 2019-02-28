@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:drawable="@drawable/ic_tick">
+
+    <target android:name="@string/tick_cross_icon_tick_path_name">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="450"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="pathData"
+                android:valueFrom="@string/tick_cross_tick_path_data"
+                android:valueTo="@string/tick_cross_cross_path_data"
+                android:valueType="pathType" />
+        </aapt:attr>
+    </target>
+
+    <target android:name="@string/tick_cross_group_name">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="450"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="rotation"
+                android:valueFrom="0"
+                android:valueTo="180" />
+        </aapt:attr>
+    </target>
+</animated-vector>

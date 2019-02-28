@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/collapse"
+        android:drawable="@drawable/ic_collapse"
+        app:state_collapse="true" />
+
+    <item
+        android:id="@+id/expand"
+        android:drawable="@drawable/ic_expand" />
+
+    <transition
+        android:drawable="@drawable/avd_collapse_to_expand"
+        android:fromId="@id/collapse"
+        android:toId="@id/expand" />
+
+    <transition
+        android:drawable="@drawable/avd_expand_to_collapse"
+        android:fromId="@id/expand"
+        android:toId="@id/collapse" />
+</animated-selector>

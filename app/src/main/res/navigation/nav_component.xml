@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_component"
+    app:startDestination="@id/component_menu_dest">
+
+    <fragment
+        android:id="@+id/component_menu_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.componentmenu.ComponentMenuFragment"
+        android:label="@string/component_menu_title"
+        tools:layout="@layout/fragment_component_menu">
+
+        <action
+            android:id="@+id/navigate_to_bottom_appbar"
+            app:destination="@+id/bottom_appbar_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_expandable_card"
+            app:destination="@+id/expandable_card_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_chip"
+            app:destination="@+id/chip_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_transformation"
+            app:destination="@+id/transformation_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_bottom_nav"
+            app:destination="@+id/bottom_nav_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_button"
+            app:destination="@+id/button_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_tab"
+            app:destination="@+id/tab_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_fab"
+            app:destination="@+id/fab_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_top_appbar"
+            app:destination="@+id/top_appbar_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_font"
+            app:destination="@+id/font_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_text_field"
+            app:destination="@+id/text_field_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_model_bottom_sheet"
+            app:destination="@id/model_bottom_sheet_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_date_picker"
+            app:destination="@id/date_picker_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_crane_shape_theme"
+            app:destination="@id/crane_theme_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/expandable_card_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.card.ExpandableCardFragment"
+        android:label="@string/expandable_card_title"
+        tools:layout="@layout/fragment_expandable_card" />
+
+    <fragment
+        android:id="@+id/drag_card_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.card.DragCardFragment"
+        android:label="@string/drag_card_title"
+        tools:layout="@layout/fragment_drag" />
+
+    <fragment
+        android:id="@+id/draggable_card_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.card.DraggableCardFragment"
+        android:label="@string/Draggable_card_title"
+        tools:layout="@layout/fragment_draggable_card" />
+
+    <fragment
+        android:id="@+id/swipe_dismiss_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.card.SwipeDismissFragment"
+        android:label="@string/swipe_dismiss_title"
+        tools:layout="@layout/fragment_swipe_dismiss" />
+
+    <fragment
+        android:id="@+id/bottom_appbar_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.bottomappbar.BottomAppBarFragment"
+        android:label="bottom app bar"
+        tools:layout="@layout/fragment_bottom_appbar" />
+
+    <fragment
+        android:id="@+id/chip_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.chip.ChipFragment"
+        android:label="Chip"
+        tools:layout="@layout/fragment_chip" />
+
+    <fragment
+        android:id="@+id/transformation_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.transformation.TransformationFragment"
+        android:label="Transformation"
+        tools:layout="@layout/fragment_transformation" />
+
+    <fragment
+        android:id="@+id/bottom_nav_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.bottomnav.BottomNavFragment"
+        android:label="Bottom navigation"
+        tools:layout="@layout/fragment_bottom_nav" />
+
+    <fragment
+        android:id="@+id/button_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.button.ButtonFragment"
+        android:label="Button"
+        tools:layout="@layout/fragment_button">
+
+        <argument
+            android:name="number"
+            android:defaultValue="0"
+            app:argType="integer" />
+
+        <argument
+            android:name="text"
+            android:defaultValue=" "
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tab_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.tab.TabFragment"
+        android:label="Tab"
+        tools:layout="@layout/fragment_tab" />
+
+    <fragment
+        android:id="@+id/fab_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.fab.FabFragment"
+        android:label="Fab"
+        tools:layout="@layout/fragment_fab" />
+
+    <fragment
+        android:id="@+id/top_appbar_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.topappbar.RegularTopAppbarFragment"
+        android:label="Top appbar"
+        tools:layout="@layout/fragment_regular_top_appbar" />
+
+    <fragment
+        android:id="@+id/scrollable_top_appbar_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.topappbar.ScrollableTopAppbarFragment"
+        android:label="@string/scrollable_top_appbar_title"
+        tools:layout="@layout/fragment_scrollable_top_appbar" />
+
+    <fragment
+        android:id="@+id/scrollable_top_appbar_transparent_status_bar_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.topappbar.ScrollableTopAppbarTransparentStatusBarFragment"
+        android:label="@string/scrollable_top_appbar_transparent_status_bar_title"
+        tools:layout="@layout/fragment_scrollable_top_appbar_transparent_status_bar" />
+
+    <fragment
+        android:id="@+id/collapsing_top_appbar_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.topappbar.CollapsingTopAppbarFragment"
+        android:label="@string/collapsing_top_appbar_title"
+        tools:layout="@layout/fragment_collapsing_top_appbar" />
+
+    <fragment
+        android:id="@+id/toolbar_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.topappbar.ToolbarFragment"
+        android:label="@string/toolbar_title"
+        tools:layout="@layout/fragment_toolbar" />
+
+    <fragment
+        android:id="@+id/font_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.font.FontFragment"
+        android:label="Font"
+        tools:layout="@layout/fragment_font" />
+
+    <fragment
+        android:id="@+id/text_field_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.textfield.TextFieldFragment"
+        android:label="Text field"
+        tools:layout="@layout/fragment_text_field" />
+
+    <fragment
+        android:id="@+id/model_bottom_sheet_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.modelbottomsheet.ModelBottomSheetFragment"
+        android:label="Model bottom sheet"
+        tools:layout="@layout/fragment_model_bottom_sheet" />
+
+    <fragment
+        android:id="@+id/date_picker_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.datepicker.DatePickerFragment"
+        android:label="@string/date_picker_title"
+        tools:layout="@layout/fragment_date_picker" />
+
+    <fragment
+        android:id="@+id/crane_theme_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.theme.CraneThemeFragment"
+        android:label="@string/crane_theme_title"
+        tools:layout="@layout/fragment_crane_shape_theme" />
+
+    <fragment
+        android:id="@+id/fort_nightly_theme_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.theme.FortNightlyThemeFragment"
+        android:label="@string/fort_nightly_theme_title"
+        tools:layout="@layout/fragment_fort_nightly_shape_theme" />
+
+    <fragment
+        android:id="@+id/shrine_theme_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.theme.ShrineThemeFragment"
+        android:label="@string/shrine_theme_title"
+        tools:layout="@layout/fragment_shrine_shape_theme" />
+</navigation>

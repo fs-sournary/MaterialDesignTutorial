@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_component"
+        android:icon="@drawable/ic_component_black_24dp"
+        android:title="@string/main_component_item_title" />
+
+    <item
+        android:id="@+id/nav_animation"
+        android:icon="@drawable/ic_animation_black_24dp"
+        android:title="@string/main_animation_item_title" />
+
+    <item
+        android:id="@+id/nav_icon_animation"
+        android:icon="@drawable/ic_icon_transform_24dp"
+        android:title="@string/main_icon_animation_item_title" />
+</menu>

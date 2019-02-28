@@ -16,7 +16,7 @@
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/image_card_action_thumbnail"
+            android:id="@+id/card_action_thumbnail_image"
             android:layout_width="@dimen/dp_40"
             android:layout_height="@dimen/dp_40"
             android:layout_marginStart="@dimen/dp_16"
@@ -26,7 +26,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/text_card_action_header"
+            android:id="@+id/card_action_header_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dp_16"
@@ -37,11 +37,11 @@
             android:textColor="@android:color/black"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/image_card_action_thumbnail"
-            app:layout_constraintTop_toTopOf="@id/image_card_action_thumbnail" />
+            app:layout_constraintStart_toEndOf="@id/card_action_thumbnail_image"
+            app:layout_constraintTop_toTopOf="@id/card_action_thumbnail_image" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/text_subhead"
+            android:id="@+id/subhead_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/dp_16"
@@ -51,22 +51,22 @@
             android:text="@string/all_main_character"
             android:textSize="@dimen/sp_12"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/image_card_action_thumbnail"
+            app:layout_constraintBottom_toBottomOf="@id/card_action_thumbnail_image"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/image_card_action_thumbnail" />
+            app:layout_constraintStart_toEndOf="@id/card_action_thumbnail_image" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/image_media"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="@dimen/dp_16"
-            android:background="@color/color_media_menu_background"
+            android:background="@color/media_menu_bg"
             android:scaleType="centerCrop"
             android:src="@drawable/img_category_entertainment_raster"
             app:layout_constraintDimensionRatio="1:0.5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/image_card_action_thumbnail" />
+            app:layout_constraintTop_toBottomOf="@id/card_action_thumbnail_image" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/text_supporting"

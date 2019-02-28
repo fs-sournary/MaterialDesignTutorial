@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/selection_mode_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="@string/date_picker_selection_mode_title"
+            android:textAppearance="@style/TextAppearance.MaterialTutorial.Title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/selection_mode_radio_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/selection_mode_title_text">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/single_date_selection_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/date_picker_single_date_selection_action" />
+
+            <RadioButton
+                android:id="@+id/date_range_selection_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_picker_date_range_selection_action" />
+        </RadioGroup>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/theme_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="@string/date_picker_theme_title"
+            android:textAppearance="@style/TextAppearance.MaterialTutorial.Title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/selection_mode_radio_group" />
+
+        <RadioGroup
+            android:id="@+id/theme_radio_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/theme_title_text">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/default_theme_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/date_picker_default_theme_action" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/dialog_theme_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_picker_dialog_theme_action" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/fullscreen_theme_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_picker_fullscreen_theme_action" />
+        </RadioGroup>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bounds_title_text"
+            style="@style/TextAppearance.MaterialTutorial.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="@string/date_picker_bounds_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/theme_radio_group" />
+
+        <RadioGroup
+            android:id="@+id/bounds_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bounds_title_text">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/default_bounds_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/date_picker_default_bounds_action" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/this_year_bounds_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_picker_this_year_bounds_action" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/within_one_year_bounds_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_picker_within_one_year_bounds_action" />
+        </RadioGroup>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/valid_day_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="@string/date_picker_valid_day_title"
+            android:textAppearance="@style/TextAppearance.MaterialTutorial.Title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bounds_radio_group" />
+
+        <RadioGroup
+            android:id="@+id/valid_day_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/valid_day_title_text">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/default_valid_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/date_picker_default_valid_action" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/today_onward_valid_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_picker_today_onward_valid_action" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/weekdays_valid_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_picker_weekdays_valid_action" />
+        </RadioGroup>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/picker_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="@string/date_picker_picker_title"
+            android:textAppearance="@style/TextAppearance.MaterialTutorial.Title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/valid_day_radio_group" />
+
+        <RadioGroup
+            android:id="@+id/picker_title_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/picker_title_text">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/default_title_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/date_picker_default_title_action" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/custom_title_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_picker_custom_title_action" />
+        </RadioGroup>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/opening_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="@string/date_picker_opening_title"
+            android:textAppearance="@style/TextAppearance.MaterialTutorial.Title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/picker_title_radio_group" />
+
+        <RadioGroup
+            android:id="@+id/opening_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/opening_title_text">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/default_opening_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/date_picker_default_opening_action" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/today_opening_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_picker_today_opening_action" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/next_month_opening_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_picker_next_month_opening_action" />
+        </RadioGroup>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/selection_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="@string/date_picker_selection_title"
+            android:textAppearance="@style/TextAppearance.MaterialTutorial.Title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/opening_radio_group" />
+
+        <RadioGroup
+            android:id="@+id/selection_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/selection_title_text">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/default_selection_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/date_picker_default_selection_action" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/today_selection_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_picker_today_opening_action" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/next_month_selection_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_picker_next_month_opening_action" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

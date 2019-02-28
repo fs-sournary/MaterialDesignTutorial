@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/show_date_picker_action"
+        android:icon="@drawable/ic_slideshow_white_24dp"
+        android:title="@string/bottom_appbar_replace"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/setting_dest"
+        android:icon="@drawable/ic_settings_white_24dp"
+        android:title="@string/component_menu_setting_action"
+        app:showAsAction="ifRoom" />
+</menu>

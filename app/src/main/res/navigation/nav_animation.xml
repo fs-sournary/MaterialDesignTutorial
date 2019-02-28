@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_animation"
+    app:startDestination="@id/animation_menu_dest">
+
+    <fragment
+        android:id="@+id/animation_menu_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.animationmenu.AnimationMenuFragment"
+        android:label="@string/animation_menu_title"
+        tools:layout="@layout/fragment_animation_menu">
+
+        <action
+            android:id="@+id/navigate_to_dissolve"
+            app:destination="@id/dissolve_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_fade_through"
+            app:destination="@id/fade_through_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_fab_transformation"
+            app:destination="@id/fab_transformation_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_reorder_list"
+            app:destination="@id/reorder_list_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_stagger_list"
+            app:destination="@id/stagger_list_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_loading_list"
+            app:destination="@id/loading_list_dest"
+            app:enterAnim="@anim/anim_grow_fade_in_from_bottom"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_shrink_fade_out_from_bottom" />
+
+        <action
+            android:id="@+id/navigate_to_nav_fade_through"
+            app:destination="@id/nav_fade_through_activity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dissolve_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.dissolve.DissolveFragment"
+        android:label="@string/dissolve_label"
+        tools:layout="@layout/fragment_dissolve" />
+
+    <fragment
+        android:id="@+id/fade_through_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.fadethrough.FadeThroughFragment"
+        android:label="@string/fade_through_title"
+        tools:layout="@layout/fragment_fade_through" />
+
+    <fragment
+        android:id="@+id/fab_transformation_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.fabtransformation.FabTransformationFragment"
+        android:label="@string/fab_transformation_title"
+        tools:layout="@layout/fragment_fab_transformation" />
+
+    <fragment
+        android:id="@+id/reorder_list_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.reorderlist.ReorderListFragment"
+        android:label="@string/list_reorder_title"
+        tools:layout="@layout/fragment_reorder_list" />
+
+    <fragment
+        android:id="@+id/stagger_list_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.staggerlist.StaggerListFragment"
+        android:label="@string/stagger_list_title"
+        tools:layout="@layout/fragment_stagger_list" />
+
+    <fragment
+        android:id="@+id/loading_list_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.loadinglist.LoadingListFragment"
+        android:label="@string/loading_list_title"
+        tools:layout="@layout/fragment_loading_list" />
+
+    <activity
+        android:id="@+id/nav_fade_through_activity"
+        android:name="com.sournary.materialdesigntutorial.NavFadeThroughActivity"
+        tools:layout="@layout/activity_nav_fade_through" />
+</navigation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_fade_through"
+    app:startDestination="@id/nav_fad_through_mater_dest">
+
+    <fragment
+        android:id="@+id/nav_fad_through_mater_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.navfadethrough.NavFadeThroughMasterFragment"
+        android:label="@string/nav_fade_through_master_title"
+        tools:layout="@layout/fragment_nav_fade_through_mater">
+
+        <action
+            android:id="@+id/navigate_to_detail"
+            app:destination="@id/nav_fad_through_detail_dest" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_fad_through_detail_dest"
+        android:name="com.sournary.materialdesigntutorial.ui.navfadethrough.NavFadeThroughDetailFragment"
+        android:label="@string/nav_fade_through_detail_title"
+        tools:layout="@layout/fragment_nav_fade_through_detail">
+
+        <argument
+            android:name="Cheese"
+            app:argType="com.sournary.materialdesigntutorial.model.Cheese" />
+    </fragment>
+</navigation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/back"
+        android:drawable="@drawable/ic_back_path_morphing"
+        android:state_checked="true" />
+
+    <item
+        android:id="@+id/overflow"
+        android:drawable="@drawable/ic_overflow_path_morphing" />
+
+    <transition
+        android:drawable="@drawable/avd_back_to_overflow"
+        android:fromId="@id/back"
+        android:toId="@id/overflow" />
+
+    <transition
+        android:drawable="@drawable/avd_overflow_to_back"
+        android:fromId="@id/overflow"
+        android:toId="@id/back" />
+</animated-selector>

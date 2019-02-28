@@ -6,13 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatTextView
-import androidx.recyclerview.widget.AsyncDifferConfig
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.sournary.materialdesigntutorial.R
 import com.sournary.materialdesigntutorial.model.Font
-import java.util.concurrent.Executors
 
 /**
  * Created: 24/08/2018
@@ -20,20 +18,8 @@ import java.util.concurrent.Executors
  * Description:
  */
 class FontAdapter(
-    private val context: Context,
-    callback: DiffUtil.ItemCallback<Font> = object : DiffUtil.ItemCallback<Font>() {
-
-        override fun areItemsTheSame(oldItem: Font, newItem: Font): Boolean =
-            oldItem.name == newItem.name
-
-        override fun areContentsTheSame(oldItem: Font, newItem: Font): Boolean =
-            oldItem.name == newItem.name
-    }
-) : ListAdapter<Font, FontAdapter.ViewHolder>(
-    AsyncDifferConfig.Builder<Font>(callback)
-        .setBackgroundThreadExecutor(Executors.newSingleThreadExecutor())
-        .build()
-) {
+    private val context: Context
+) : ListAdapter<Font, FontAdapter.ViewHolder>(FONT_COMPARATOR) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val rootView =
@@ -45,11 +31,23 @@ class FontAdapter(
         holder.bindView(getItem(position))
     }
 
+    companion object {
+
+        val FONT_COMPARATOR = object : DiffUtil.ItemCallback<Font>() {
+
+            override fun areItemsTheSame(oldItem: Font, newItem: Font): Boolean =
+                oldItem.name == newItem.name
+
+            override fun areContentsTheSame(oldItem: Font, newItem: Font): Boolean =
+                oldItem.name == newItem.name
+        }
+    }
+
     class ViewHolder(private val context: Context, itemView: View) :
         RecyclerView.ViewHolder(itemView) {
 
         private val headerText = itemView.findViewById<AppCompatTextView>(R.id.text_header)
-        private val subheadText = itemView.findViewById<AppCompatTextView>(R.id.text_subhead)
+        private val subheadText = itemView.findViewById<AppCompatTextView>(R.id.subhead_text)
         private val demoText = itemView.findViewById<AppCompatTextView>(R.id.text_demo)
 
         fun bindView(font: Font) {

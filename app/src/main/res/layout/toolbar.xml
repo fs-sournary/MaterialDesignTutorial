@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.appbar.MaterialToolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/toolbar"
     style="@style/Widget.MaterialComponents.Toolbar"
+    android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="?android:attr/actionBarSize"
-    android:background="@color/colorPrimary"
+    android:background="@color/primary"
     android:elevation="@dimen/card_elevation"
     app:navigationIcon="@drawable/ic_close_vd_theme_24dp"
-    app:titleTextColor="@android:color/white"
-    tools:ignore="UnusedAttribute" />
+    app:titleTextColor="@android:color/white" />

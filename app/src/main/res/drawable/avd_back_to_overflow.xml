@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:drawable="@drawable/ic_back_path_morphing">
+
+    <target android:name="@string/back_group_name">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="300"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="rotation"
+                android:valueFrom="180"
+                android:valueTo="360" />
+        </aapt:attr>
+    </target>
+
+    <target android:name="@string/back_path_name">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="300"
+                android:interpolator="@android:interpolator/fast_out_slow_in"
+                android:propertyName="pathData"
+                android:valueFrom="@string/back_path_data"
+                android:valueTo="@string/overflow_path_data"
+                android:valueType="pathType" />
+        </aapt:attr>
+    </target>
+</animated-vector>

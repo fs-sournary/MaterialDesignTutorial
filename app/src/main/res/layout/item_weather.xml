@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:textColor="@color/color_weather_day"
+        android:textColor="@color/weather_day"
         app:layout_constraintBottom_toBottomOf="@id/image_avatar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/image_avatar" />

@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="dp_40">40dp</dimen>
-    <dimen name="dp_16">16dp</dimen>
-    <dimen name="dp_8">8dp</dimen>
-    <dimen name="dp_4">4dp</dimen>
-    <dimen name="sp_12">12sp</dimen>
     <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="dp_16">16dp</dimen>
     <dimen name="sp_16">16sp</dimen>
     <dimen name="dp_24">24dp</dimen>
-    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+    <dimen name="dp_128">128dp</dimen>
+
     <dimen name="sp_56">56sp</dimen>
     <dimen name="sp_72">72sp</dimen>
     <dimen name="sp_40">40sp</dimen>
@@ -21,7 +24,7 @@
     <dimen name="elevation_frame_bottom_drawer">16dp</dimen>
     <dimen name="card_action_bottom_nav_margin">8dp</dimen>
     <dimen name="card_radius">4dp</dimen>
-    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
     <dimen name="text_header_bottom_nav_margin_end">16dp</dimen>
     <dimen name="text_header_bottom_nav_margin_start">16dp</dimen>
     <dimen name="text_subhead_margin_start">16dp</dimen>
@@ -70,4 +73,5 @@
     <dimen name="edit_filled_box_text_field_margin_end">16dp</dimen>
     <dimen name="edit_text_filed_box_radius">8dp</dimen>
     <dimen name="dp_72">72dp</dimen>
+    <dimen name="dp_256">256dp</dimen>
 </resources>

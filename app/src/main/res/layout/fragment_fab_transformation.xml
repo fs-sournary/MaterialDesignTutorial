@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/animation_recycler"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/descriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_16"
+            android:text="@string/fab_transformation_description"
+            android:textAppearance="@style/TextAppearance.MaterialTutorial.Title" />
+    </androidx.core.widget.NestedScrollView>
+
+    <View
+        android:id="@+id/scrim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_scrim"
+        android:visibility="invisible"
+        app:layout_behavior="com.google.android.material.transformation.FabTransformationScrimBehavior" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/dp_16"
+        android:src="@drawable/ic_add_icon_24dp"
+        app:fabSize="normal" />
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:layout_width="@dimen/dp_256"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/dp_16"
+        android:elevation="@dimen/dp_8"
+        android:visibility="invisible"
+        app:layout_behavior="com.google.android.material.transformation.FabTransformationSheetBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_8">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/firstItemText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dp_8"
+                android:text="@string/fab_transformation_item_1"
+                android:textAppearance="@style/TextAppearance.MaterialTutorial.Title" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/secondItemText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:text="@string/fab_transformation_item_2"
+                android:textAppearance="@style/TextAppearance.MaterialTutorial.Title" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/thirdItemText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:text="@string/fab_transformation_item_3"
+                android:textAppearance="@style/TextAppearance.MaterialTutorial.Title" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/fourItemText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_8"
+                android:padding="@dimen/dp_8"
+                android:text="@string/fab_transformation_item_4"
+                android:textAppearance="@style/TextAppearance.MaterialTutorial.Title" />
+        </LinearLayout>
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

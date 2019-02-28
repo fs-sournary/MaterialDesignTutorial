@@ -5,33 +5,18 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
-import androidx.recyclerview.widget.AsyncDifferConfig
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.sournary.materialdesigntutorial.R
 import com.sournary.materialdesigntutorial.model.Weather
-import java.util.concurrent.Executors
 
 /**
  * Created: 20/08/2018
  * By: Sang
  * Description:
  */
-class WeatherAdapter(
-    callback: DiffUtil.ItemCallback<Weather> = object : DiffUtil.ItemCallback<Weather>() {
-
-        override fun areItemsTheSame(oldItem: Weather, newItem: Weather): Boolean =
-            oldItem == newItem
-
-        override fun areContentsTheSame(oldItem: Weather, newItem: Weather): Boolean =
-            oldItem.day == newItem.day
-    }
-) : ListAdapter<Weather, WeatherAdapter.ViewHolder>(
-    AsyncDifferConfig.Builder<Weather>(callback)
-        .setBackgroundThreadExecutor(Executors.newSingleThreadExecutor())
-        .build()
-) {
+class WeatherAdapter() : ListAdapter<Weather, WeatherAdapter.ViewHolder>(COMPARATOR) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view =
@@ -41,6 +26,18 @@ class WeatherAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindView(getItem(position))
+    }
+
+    companion object {
+
+        val COMPARATOR = object : DiffUtil.ItemCallback<Weather>() {
+
+            override fun areItemsTheSame(oldItem: Weather, newItem: Weather): Boolean =
+                oldItem == newItem
+
+            override fun areContentsTheSame(oldItem: Weather, newItem: Weather): Boolean =
+                oldItem.day == newItem.day
+        }
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
